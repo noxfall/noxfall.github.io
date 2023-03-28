@@ -2,9 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #1E1F26;
   color: #FFF;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 35%;
+}
+
+.heroHeadText {
+  font-size: 80px;
+  color: #03dac6;
+}
+
+.heroSubText {
+  font-size: 30px;
+}
+
+.sectionHeadText {
+  font-size: 30px;
+}
+
+.sectionSubText {
+  font-size: 14px;
+}
+
+#name {
+  color: #ff0266;
 }
