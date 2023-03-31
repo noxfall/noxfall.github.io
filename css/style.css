@@ -530,6 +530,50 @@ canvas {
   }
 }
 
+/* Project Cards */
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  width: 360px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail {
+  width: 360px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.project-url {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.project-title {
+  text-align: left;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.project-desc {
+  width: 100%;
+  text-align: left;
+  padding: 0 10px;
+}
+
 @media only screen and (max-width: 979px) {
   .ag-timeline_line {
     left: 30px;
