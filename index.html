@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('Qz7Zc4WTxwFuHo8tH');
+        })();
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -450,6 +457,37 @@
       </div>
     </div>
   </section>
+  <section id="contact">
+    <div class="main">
+      <div class="bio">
+        <img src="https://avatars.githubusercontent.com/u/118026646?s=400&u=bd13eca63d4ac58f410a899245a86d9aaf86147c&v=4" alt="avatar" class="profile-img">
+        <h3 class="header">Milos Georgiev</h3>
+        <p>Full-stack developer, system administrator and FOSS enthusiast. I'm interested in design, performance and the future of the web.</p>
+        <a href="https://github.com/noxfall" class="bio-link" target="_blank">
+          Github 
+        </a>
+      </div>
+      <div class="contact">
+        <form id="form">
+          <input type="hidden" name="contact_number">
+          <legend class="header">Get in touch</legend>
+          <fieldset>
+            <input type="text" id="name-input" placeholder="Your name..." name="user_name">
+          </fieldset>
+          <fieldset>
+            <input type="email" id="email-input" placeholder="Your email..." name="user_email">
+          </fieldset>
+          <fieldset>
+            <textarea id="message-input" placeholder="Your message..." name="message"></textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit" id="btn-submit">Send</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    
+  </section>
   <canvas class="background">
     
   </canvas>
@@ -457,5 +495,6 @@
   <script src="https://cdn.jsdelivr.net/npm/htmltypist.js/dist/typist.js"></script>
   <script src="js/timeline.js"></script>
   <script src="js/holoCard.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
