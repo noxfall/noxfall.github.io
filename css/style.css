@@ -5,6 +5,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --bg: #1a1e2d;
+  --green: #a5ea9b;
+  --pink: #ff61d8;
+  --blue: #569cfa;
+  --orange: #ffcc81;
+  --cyan: #7ed1e2;
+}
+
 body {
   background-color: #1E1F26;
   color: #FFF;
@@ -22,34 +31,88 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-  padding-left: 35%;
+  align-items: center;
+}
+
+/* BONGO CAT */
+.container {
+  width: 40vw;
+  height: 40vh;
+}
+.container svg {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+#bongo-cat {
+  fill: var(--bg);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+#bongo-cat .laptop-cover,
+#bongo-cat .headphone .band {
+  fill: none;
+}
+#bongo-cat .paw, #bongo-cat .head {
+  stroke: var(--orange);
+}
+#bongo-cat .laptop-keyboard {
+  stroke-width: 2;
+}
+#bongo-cat .terminal-code {
+  stroke-width: 5;
+}
+#bongo-cat .music .note,
+#bongo-cat .laptop-base,
+#bongo-cat .laptop-cover,
+#bongo-cat .paw .pads {
+  stroke: var(--pink);
+}
+#bongo-cat .table line,
+#bongo-cat .headphone .band,
+#bongo-cat .headphone .speaker path:nth-child(3) {
+  stroke: var(--green);
+}
+#bongo-cat .terminal-frame,
+#bongo-cat .laptop-keyboard,
+#bongo-cat .headphone .speaker path:nth-child(2) {
+  stroke: var(--blue);
+}
+#bongo-cat .terminal-code,
+#bongo-cat .headphone .speaker path:first-child {
+  stroke: var(--cyan);
 }
 
 #about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 1rem 2.5rem;
+  align-items: left;
+  padding: 5rem 10rem;
+  text-align: left;
 }
 
 .cards {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
   gap: 2rem;
 }
 
 .serviceCard {
-  width: 100%;
-  min-height: 280px;
+  width: 360px;
+  min-height: 300px;
+  background-color: rgba(0, 0, 0, .5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid #00cea8;
+  border-radius: 10px;
 }
 
 .serviceImg {
@@ -69,6 +132,7 @@ canvas {
 
 .sectionHeadText {
   font-size: 60px;
+  margin-bottom: 4rem;
 }
 
 .sectionSubText {
@@ -78,6 +142,12 @@ canvas {
 
 #name {
   color: #ff0266;
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
 /* TIMELINE */
@@ -94,7 +164,7 @@ canvas {
   color: rgb(84, 89, 95);
 }
 .ag-timeline_title {
-  background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
+  
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
@@ -531,6 +601,12 @@ canvas {
 }
 
 /* Project Cards */
+#projects {
+  padding: 5rem 10rem;
+  text-align: center;
+  height: 100vh;
+}
+
 .projects {
   width: 100%;
   display: flex;
@@ -538,6 +614,7 @@ canvas {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-top: 10rem;
 }
 
 .project-card {
@@ -575,6 +652,10 @@ canvas {
 }
 
 /* FEEDBACK */
+#testimonials {
+  padding: 5rem 10rem;
+}
+
 .testimonials {
   display: flex;
   flex-wrap: wrap;
@@ -620,6 +701,16 @@ canvas {
 
 .cyan-text {
   color:#03dac6;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  padding: .5rem 0;
+  text-align: center;
+  width: 100%;
+  font-size: .85rem;
+  color: rgba(255, 255, 255, .65);
 }
 
 @media only screen and (max-width: 979px) {
