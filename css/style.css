@@ -574,6 +574,54 @@ canvas {
   padding: 0 10px;
 }
 
+/* FEEDBACK */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.test-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, .75);
+  padding: 10px 20px;
+  width: 360px;
+  border-radius: 10px;
+}
+
+.feedback-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 64px;
+}
+
+.quote {
+  font-size: 64px;
+}
+
+.testimony {
+  font-size: 18px;
+  padding-bottom: 36px;
+}
+
+.user-title {
+  font-size: .8rem;
+  color: rgba(255, 255, 255, .75);
+}
+
+.cyan-text {
+  color:#03dac6;
+}
+
 @media only screen and (max-width: 979px) {
   .ag-timeline_line {
     left: 30px;
