@@ -1026,6 +1026,7 @@ canvas {
 }
 
 @media only screen and (max-width: 767px) {
+
   .ag-format-container {
     width: 96%;
   }
@@ -1062,10 +1063,20 @@ canvas {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 6.5rem;
   }
 
   .ag-timeline-block {
     width: 767px;
+  }
+
+  .ag-timeline_tagline {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .ag-timeline_title {
+    text-align: left;
   }
 
   .logo-img {
