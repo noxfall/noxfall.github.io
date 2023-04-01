@@ -1038,12 +1038,14 @@ canvas {
 
   .navbar {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .navbar ul {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: left;
   }
 
   #about {
@@ -1066,22 +1068,22 @@ canvas {
     padding-bottom: 6.5rem;
   }
 
-  .ag-timeline-block {
-    width: 767px;
-  }
-
   .ag-timeline_tagline {
     text-align: left;
     font-size: 2rem;
   }
 
   .ag-timeline_title {
-    text-align: left;
+    display: none;
   }
 
   .logo-img {
     width: 64px;
     height: 64px;
+  }
+
+  .sectionHeadText {
+    font-size: 36px;
   }
 
 }
