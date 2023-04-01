@@ -1064,6 +1064,15 @@ canvas {
     align-items: center;
   }
 
+  .ag-timeline-block {
+    width: 767px;
+  }
+
+  .logo-img {
+    width: 64px;
+    height: 64px;
+  }
+
 }
 
 @media only screen and (max-width: 639px) {
