@@ -1034,6 +1034,36 @@ canvas {
     height: auto;
     width: auto;
   }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about {
+    padding: 5rem 1rem;
+  }
+
+  #projects {
+    padding: 5rem 1rem;
+  }
+
+  #testimonials {
+    margin-top: 40rem;
+    padding: 5rem 1rem;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 @media only screen and (max-width: 639px) {
