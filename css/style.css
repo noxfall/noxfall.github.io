@@ -953,6 +953,26 @@ canvas {
           animation: Contact 600ms ease-in-out forwards;
 }
 
+.tags {
+  padding: 1rem 1rem;
+}
+
+.hashtag-1 {
+  color:#0093ff;
+}
+
+.hashtag-2 {
+  color:rgba(255, 66, 236, 0.76);
+}
+
+.hashtag-3 {
+  color:var(--green);
+}
+
+.hashtag-4 {
+  color:rgba(78, 212, 253, 0.41);
+}
+
 @-webkit-keyframes Page {
   0% {
     opacity: 0;
@@ -1055,6 +1075,8 @@ canvas {
   #projects {
     padding: 5rem 1rem;
   }
+
+
 
   #testimonials {
     margin-top: 40rem;
